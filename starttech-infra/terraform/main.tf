@@ -19,7 +19,7 @@ module "networking" {
 
 
 }
-
+#
 
 module "compute" {
   source             = "./modules/compute/"
@@ -69,5 +69,10 @@ module "backend-s3-config" {
   ec2_role_name  = module.compute.ec2_role
   s3_bucket_name = "starttech-deployments-bucket"
 }
+
+
+
+
+
 
 
