@@ -363,7 +363,7 @@ resource "aws_launch_template" "server_tamplate" {
     # }
   ))
 
-  key_name = aws_key_pair.aws_key_pair.key_name
+  key_name = aws_key_pair.generated_key.key_name
   iam_instance_profile {
     name = aws_iam_instance_profile.ec2_profile.name
   }
